@@ -11,4 +11,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-enable redis imagick libsodium \
     && docker-php-ext-install -j$(nproc) exif gettext intl mcrypt sockets zip
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+COPY mailer-setup.sh /mailer-setup.sh
+
+CMD ["mailer-setup.sh"]
