@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-enable redis imagick libsodium \
     && docker-php-ext-install -j$(nproc) exif gettext intl mcrypt sockets zip
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["docker-entrypoint.sh"]
