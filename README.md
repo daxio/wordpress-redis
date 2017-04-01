@@ -1,5 +1,5 @@
 ## What is this?
-This is the official Wordpress with PHP 7.1 FPM base image with additional `redis` and other extensions.
+This is the official Wordpress with PHP 7.1 base image with additional `redis` and other extensions.
 
 ## What's included:
 * PHP extensions (additional to default PHP installation):
