@@ -14,6 +14,4 @@ This is the official Wordpress with PHP 7.1 base image with additional `redis` a
   * `zip`
 
 ## TODO:
-- [x] Add `redis` PHP extensions and others required for Wordpress 
-- [ ] Listen on a UNIX socket instead of port 9000
-- [ ] Remove EXPOSE instruction since k8s pod has common port space and containers can find eachother on localhost
+- [x] Add `redis` PHP extensions and others required for Wordpress
